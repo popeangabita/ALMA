@@ -42,3 +42,12 @@ Alma is a secure messaging application designed to facilitate encrypted communic
    python server.py
 
   Replace '127.0.0.1' in client.py with the server's IP address if not running on the same machine.
+
+## Network Considerations
+
+When running the server and clients on different machines, you may need to consider the following:
+
+- Port Forwarding: If the server is behind a router, you may need to configure port forwarding to allow external clients to connect to the server. Forward port 9999 (or your chosen port) to the internal IP address of the machine running the server.
+- Firewall Settings: Ensure that the firewall on the server machine allows incoming connections on the specified port. You may need to create a rule to allow traffic on port 9999.
+- Static IP or Dynamic DNS: If the server is hosted on a home network, consider using a static IP address or a Dynamic DNS service to make connecting easier for clients.
+
